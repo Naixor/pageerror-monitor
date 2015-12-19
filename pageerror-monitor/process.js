@@ -1,9 +1,10 @@
 var Promise = require('promise');
 var cp = require('child_process');
+var path = require('path');
 var spawn = cp.spawn;
 
-function process(url, settings) {
-    var pageerror = spawn('phantomjs', ['./pageerror.js', url].concat(settings));
+function _process(url, settings) {
+    var pageerror = spawn('phantomjs', [path.join(__dirname, 'pageerror.js'), url].concat(settings));
 
     return new Promise(function (resolve, reject) {
         var stdout = "";
@@ -37,4 +38,4 @@ function process(url, settings) {
     });
 }
 
-module.exports = process;
+module.exports = _process;

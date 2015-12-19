@@ -10,14 +10,16 @@ var Promise = require('promise');
 var path = require('path');
 var resMap = {};
 
-program.version('0.0.1')
+var version = JSON.parse(fs.readFileSync(path.join(__dirname, 'package.json'))).version;
+
+program.version(version)
     .allowUnknownOption()
     .option('-u, --urls [file]', '需要错误监控的页面链接,可以传入配置文件或者url字符串,多条url使用;分割,多条url建议使用文件')
     .option('-c, --conf [file]', '配置,可以进行cookie、userAgent、emial发送等配置,以文件形式传入')
     .option('-e, --email [file]', '单独配置email,配置此项会覆盖-c中的email配置,以文件传入,写法参考-useage中-c的描述')
     .option('-ck, --cookie [file]', '单独配置cookie,配置此项会覆盖-c中cookie的配置,文件形式传入,格式参考-useage中描述')
     .option('-ua, --userAgent [userAgent]', '单独配置userAgent,配置此项会覆盖-c中userAgent配置,直接传入')
-    .option('-useage, --useage', '使用事例');
+    .option('-U, --useage', '使用事例');
 
 program.parse(process.argv);
 
@@ -29,7 +31,7 @@ function isFile(s) {
     return fs.statSync(s).isFile();
 }
 
-if (program.usage === true) {
+if (program.useage === true) {
     var info = [
         '-u, --urls [file] 传入的文件内容中url之间使用\\n分割开,如:',
         '\turl1',

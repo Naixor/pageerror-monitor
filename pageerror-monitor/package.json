@@ -24,7 +24,6 @@
   "dependencies": {
     "colors": "^1.1.2",
     "commander": "^2.9.0",
-    "ems": "^0.2.2",
     "nodemailer": "^1.10.0",
     "nodemailer-smtp-transport": "^1.0.4",
     "promise": "^7.0.4"

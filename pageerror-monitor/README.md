@@ -10,18 +10,18 @@ $ npm install -g pageerror-monitor
 
 > run
 ```shell
-pageerror-monitor -h
+pageerror -h
 ```
 or
 ```shell
-pageerror-monitor --useage
+pageerror --useage
 ```
 
-You can also see `./pageerror-monitor/examples/config.json` and `./pageerror-monitor/examples/url.txt`.
+You can also see `./examples/config.json` and `./examples/url.txt`.
 
 And then you can run
 ```shell
-pageerror-monitor -u {pathto url.txt} -c {pathto config.json}
+pageerror -u {pathto url.txt} -c {pathto config.json}
 ```
 
 ## Connect me

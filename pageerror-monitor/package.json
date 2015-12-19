@@ -1,8 +1,11 @@
 {
   "name": "pageerror-monitor",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "监控页面报错",
-  "main": "pageerror.js",
+  "main": "pageerror-monitor.js",
+  "bin": {
+    "pageerror": "pageerror-monitor.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

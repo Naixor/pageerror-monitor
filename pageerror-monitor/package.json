@@ -1,0 +1,32 @@
+{
+  "name": "pageerror-monitor",
+  "version": "1.0.0",
+  "description": "监控页面报错",
+  "main": "pageerror.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/naixor/pageerror-monitor"
+  },
+  "keywords": [
+    "page",
+    "error",
+    "monitor"
+  ],
+  "author": "Naxior (hongyesoftware@gmail.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/naixor/pageerror-monitor/issues"
+  },
+  "homepage": "https://github.com/naixor/pageerror-monitor",
+  "dependencies": {
+    "colors": "^1.1.2",
+    "commander": "^2.9.0",
+    "ems": "^0.2.2",
+    "nodemailer": "^1.10.0",
+    "nodemailer-smtp-transport": "^1.0.4",
+    "promise": "^7.0.4"
+  }
+}

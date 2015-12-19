@@ -1,0 +1,11 @@
+{
+    "email": {
+        "auth": {
+            "user": "someone",
+            "pass": "someones passwd"
+        },
+        "from": "xxx@xxx",
+        "to": "xxx@xxx",
+        "subject": "页面错误监控"
+    }
+}

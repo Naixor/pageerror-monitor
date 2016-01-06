@@ -75,6 +75,11 @@ if (system.args.length === 1) {
         phantom.exit();
     }
 
+    page.viewportSize = {
+        width: 1600,
+        height: 30000
+    };
+
     page.settings.resourceTimeout = 30000;
     // JS报错
     page.onError = function(msg, trace) {
